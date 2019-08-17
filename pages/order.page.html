@@ -1,123 +1,48 @@
-<!-- <iframe src="./contents/order.content.html" frameborder="0"></iframe> -->
-<header>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-</header>
+
+</head>
 
 <body>
-    <h2 class="">Órdenes</h2>
+    <!-- <div class="container"> -->
     <div class="row">
-        <div class="col-8">
-            <ul class="nav nav-tabs">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">Todas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pendientes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Entregadas</a>
-                </li>
-                <li>
-                </li>
-            </ul>
+        <div class="col-2" style="height: 100vh; background-color: black">
         </div>
-        <div class="col-4">
-            <button class=" border border-0 bg-white"><i class="fas fa-file-import"></i><small>Sincronizar<br>Órdenes</small></button>
-            <button class=" border border-secundary shadow p-1 bg-white"><i class="fas fa-file-import"></i>IMPORTAR SSC </button>
-            <button class="shadow p-1 btn btn-primary"> CREAR ORDEN</button>
-        </div>
-    </div>
-    <div class="container pt-4">
-        <div class="row">
-            <div class="col-1">
-                <div class="dropdown">
-                    <button class="border border-secundary  p-1 bg-white dropdown-toggle" type="button" data-toggle="dropdown">FILTROS
-                    <span class="caret"></span></button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Filtro 1</a></li>
-                        <li><a href="#">Filtro 2</a></li>
-                        <li><a href="#">Filtro 3</a></li>
-                    </ul>
-                </div>
+        <div class="col-10">
+            <div class="header">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Pedro Lopez<br>Saldo: $0 pesos <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item p-2 pl-5">
+                                <button><a class="nav-link" href="#">Agregar Saldo</a></button>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <button class="border-0 bg-white mx-4 my-2 my-sm-0" type="submit">AYUDA</button>
+                            <button class="border-0 bg-white mx-4 my-2 my-sm-0" type="submit">CONTÁCTANOS</button>
+                        </form>
+                    </div>
+                </nav>
             </div>
-            <div class="col-11">
-                <input class="form-control" id="myInput" type="text" placeholder="Search..">
-            </div>
+            <iframe src="./contents/order.content.html" style="height: 80vh; width: 100%; border:none"></iframe>
         </div>
     </div>
-    <br>
-    <div class="row">
-        <div class="col-10 offset-1">
-            <table class="table table-bordered-0 ">
-                <thead>
-                    <tr>
-                        <th>ORDEN</th>
-                        <th>RASTREO</th>
-                        <th>DESTINATARIO</th>
-                        <th>DESTINO</th>
-                        <th>PAQUETERIA</th>
-                        <th>TOTAL</th>
-                        <th>ACCIONES</th>
-                        <th>
-                            <div class="dropdown">
-                                <button class="border border-secundary  p-1 bg-white dropdown-toggle" type="button" data-toggle="dropdown">bars
-                                <span class="caret"></span></button>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Algo 1</a></li>
-                                    <li><a href="#">Algo 2</a></li>
-                                    <li><a href="#">Algo 3</a></li>
-                                </ul>
-                            </div>
-                        </th>
-                    </tr>
-                </thead>
-                <tbody id="myTable">
-                    <tr>
-                        <td>John</td>
-                        <td>Doe</td>
-                        <td>john@example.com</td>
-                        <td>john@example.com</td>
-                        <td>john@example.com</td>
-                        <td>john@example.com</td>
-                        <td>john@example.com</td>
-                    </tr>
-                    <tr>
-                        <td>Mary</td>
-                        <td>Moe</td>
-                        <td>mary@mail.com</td>
-                        <td>mary@mail.com</td>
-                        <td>mary@mail.com</td>
-                        <td>mary@mail.com</td>
-                        <td>mary@mail.com</td>
-                    </tr>
-                    <tr>
-                        <td>July</td>
-                        <td>Dooley</td>
-                        <td>Dooley</td>
-                        <td>Dooley</td>
-                        <td>Dooley</td>
-                        <td>Dooley</td>
-                        <td>july@greatstuff.com</td>
-                    </tr>
-                    <tr>
-                        <td>Anja</td>
-                        <td>Anja</td>
-                        <td>Anja</td>
-                        <td>Anja</td>
-                        <td>Anja</td>
-                        <td>Ravendale</td>
-                        <td>a_r@test.com</td>
-                    </tr>
-                </tbody>
-            </table>
-
-        </div>
-    </div>
-    </div>
-    </div>
+    <!-- </div> -->
 </body>
+
+</html>
