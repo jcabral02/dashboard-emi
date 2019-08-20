@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <img src="../img/logo-emissary.png" class="w-100 h-100">
+            </div>
+            <div class="user justify-content-center mx-4" style="text-align: center;">
+                <div class="user-info">
+                    <a data-toggle="collapse" href="#collapseExample" class="username">
+
+                        <div class="row " style="text-align: center; font-size: 1.2em; margin-left: 15px;">
+                            <span id="spanNombre">Edgar</span>
+                        </div>
+
+                        <div class="row " style="font-size: 1.2em; margin-top: 10px; margin-left: 15px;">
+                            Saldo: <span id="userSaldo">0.00</span>
+
+                        </div>
+                    </a>
+                    <div class="collapse" id="collapseExample">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <span class="sidebar-mini">MP </span>
+                                    <span class="sidebar-normal">Mi Perfil </span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#" class="mt-2 mx-4"><i class="material-icons mr-2">show_chart</i> <span id="#">Estadísticas</span></a>
+                </li>
+
+                <li>
+                    <a href="#" class="mx-4"><i class="material-icons mr-3">airplanemode_active</i><span id="#">Envíos</span></a>
+                </li>
+                <li>
+                    <a href="#" class="mx-4"><i class="material-icons mr-3">assignment</i><span id="#">Órdenes</span></a>
+                </li>
+                <li>
+                    <a href="#" class="mx-4"><i class="material-icons mr-3">home</i><span id="#">Direcciones</span></a>
+                </li>
+                <li>
+                    <a href="#" class="mx-4"><i class="material-icons mr-3">aspect_ratio</i><span id="#">Paquetes</span></a>
+                </li>
+                <li>
+                    <a href="#" class="mx-4"><i class="material-icons mr-3">attach_money</i><span id="#">Cotizar</span></a>
+                </li>
+                <li>
+                    <a href="#" class="mx-4"><i class="material-icons mr-3">list</i><span id="#">Movimientos</span></a>
+                </li>
+                <li>
+                    <a href="#" class="mx-4"><i class="material-icons mr-3">autorenew</i><span id="#">Integraciones</span></a>
+                </li>
+                <li>
+                    <a href="#" class="mx-4"><i class="material-icons mr-3">settings</i><span id="#">Preferencias</span></a>
+                </li>
+                <li>
+                    <a href="#" class="mx-4"><i class="material-icons mr-3">close</i><span id="#">Cerrar sesión</span></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="content">
+            <nav class="navbar navbar-expand-lg ">
+                <!-- </div> -->
+                <button class="navbar-toggler" type="button" id="sidebarCollapse">
+													<!-- data-toggle="collapse" data-target="#sidebar" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation"> -->
+															<span class="sr-only">Toggle navigation
+															</span>
+															<span class="navbar-toggler-icon icon-bar"><i class="material-icons">reorder</i></span>
+														</button>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active ">
+                        <a class="nav-link" href="#">Pedro Lopez<br><span>Saldo: $0 pesos</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-primary mt-3" href="#"><i class="fa fa-dollar-sign"></i>AGREGAR SALDO</button>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mr-auto bg-blue">
+                    <li class="nav-item active">
+                        <a class="m-2 float-right" href="#">AYUDA </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="m-2 float-right" href="#">CONTÁCTANOS </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="main_content">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-6">
+                                <ul id="menuLista" class="nav nav-pills ml-3">
+                                    <li class="nav-item">
+                                        <a id="txtEnvios" class="nav-link active show" data-toggle="tab" role="tablist" href="#linkEnvios">Envios
+									</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a id="txtCancelacion" class="nav-link  " data-toggle="tab" role="tablist" href="#linkCancelacion">Cancelaciones
+										</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="nav nav-pills">
+                                    <li class="nav-item">
+                                        <button id="btnExportar" class="btn btn-rose btn-link">
+												<i class="material-icons"></i>
+												Exportar a CSV
+														<div class="ripple-container"></div>
+											</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button id="btnNuevoEnvio" class="btn btn-primary">Nuevo Envío</button>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-lg-1 col-2 mx-3">
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+										  FILTROS <i class="material-icons">filter_list</i>
+										</button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-6 ml-4 mt-1">
+                        <div class="form-group datePicker bmd-form-group is-filled">
+                            <input id="filtroFechas" class="form-control" name="datefilter" type="text" value="">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table id="tableEnvios" class="table table-striped table-no-bordered table-hover" cellspacing="0">
+                                <thead>
+                                    <tr>
+
+                                        <th>Orden</th>
+                                        <th>Rastreo</th>
+                                        <th>Destinatario</th>
+                                        <th>Destino</th>
+                                        <th>Paquetería </th>
+                                        <th>Total</th>
+                                        <th class="text-left">Acciones</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody id="#Envios">
+                                    <tr id=id class='trEnvios'>
+                                        <td>envio_id</td>
+                                        <td class='destinatario'>nombreDestinatario</td>
+                                        <td>Destino</td>
+                                        <td>paqueteria</td>
+                                        <td>precio</td>
+                                        <td>mucho</td>
+                                        <td>accion</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="centrar">
+                                <p>Aún no tienes ningún envío realiazdo. Agrega una orden que desees enviar.</p>
+                                <!-- ICONOS PENDIENTE :D-->
+                                <button class="btn btn-primary shadow p-1"><i class="fas fa-file-import"></i>SINCRONIZAR ORDENES DESDE E-COMMERCE </button>
+                                <button class="shadow p-1 btn btn-primary"><i class="PENDIENTE"></i> NUEVO ENVÍO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+        <script>
+            $(document).ready(function() {
+                $('#sidebarCollapse').on('click', function() {
+                    $('#sidebar').toggleClass('toggled');
+                });
+            });
+        </script>
+
+
+
+
+
+</body>
+
+</html>
