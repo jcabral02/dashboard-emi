@@ -28,61 +28,40 @@
             <div class="modal-header">
                 <span class="close">&times;</span>
             </div>
-            <div class="col-12  mt-3">
-                <div class="row bg-white">
-                    <div class="col-6">
-                        <div class="card">
-                            <div class="card-header"> Remitente</div>
-                            <div class="card-body">
-                                <input class="w-100 mt-3" type="text" placeholder="Nombre">
-                                <input class="w-100 mt-3" type="text" placeholder="Compañía">
-
-                                <input class="w-100 mt-3" type="text" placeholder="correo@correo.com">
-                                <input class="w-100 mt-3" type="text" placeholder="Celular">
-                                <p class="mt-3"> Desde
-                                    <p>
-                                        <input class="w-100" type="text" placeholder="Dirección 1">
-                                        <input class="w-100 mt-3" type="text" placeholder="Dirección 2">
-                                        <input class="w-50 mt-3" type="text" placeholder="Ciudad">
-                                        <input class="w-25 mt-3" type="text" placeholder="Estado">
-                                        <input class="mt-4" type="text" placeholder="CP">
-                                        <select class="mt-4 ml-3"> País
-                                                            <option value="#">País 1</option>
-                                                            <option value="#">País 2</option>
-                                                            <option value="#">País 3</option>
-                                                            <option value="#">País 4</option>
-                                                            </select>
-                            </div>
-                        </div>
+            <div class="col-12  mt-3 bg-white">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Nuevo Paquete</h3>
                     </div>
-                    <div class="col-6">
-                        <div class="card">
-                            <div class="card-header"> Destinatario</div>
-                            <div class="card-body">
-                                <input class="w-100 mt-3" type="text" placeholder="Nombre">
-                                <input class="w-100 mt-3" type="text" placeholder="Compañía">
-                                <input class="w-100 mt-3" type="text" placeholder="correo@correo.com">
-                                <input class="w-100 mt-3" type="text" placeholder="Celular">
-                                <p class="mt-3"> A
-                                    <p>
-                                        <input class="w-100" type="text" placeholder="Dirección 1">
-                                        <input class="w-100 mt-3" type="text" placeholder="Dirección 2">
-                                        <input class="w-50 mt-3" type="text" placeholder="Ciudad">
-                                        <input class="w-25 mt-3" type="text" placeholder="Estado">
-                                        <input class="mt-4" type="text" placeholder="CP">
-                                        <select class="mt-4 ml-3"> País
-                                                                <option value="#">País 1</option>
-                                                                <option value="#">País 2</option>
-                                                                <option value="#">País 3</option>
-                                                                <option value="#">País 4</option>
-                                                                </select>
-                            </div>
-                        </div>
+                    <div class="card-body">
+                        <label class="mt-3">Crea paquetes para que puedas utilizar en los siguientes envíos</label>
+                        <input class="w-100" type="text" placeholder="Medidas Personalizadas">
+                        <label class="mt-3">Medidas</label><br>
+                        <input class="w-25 mx-2" type="text" placeholder="Largo">
+                        <input class="w-25 mx-2" type="text" placeholder="Ancho">
+                        <input class="w-25 mx-2" type="text" placeholder="Alto">
+                        <select class="p-1">
+                            <option value="#">CM</option>
+                            <option value="#">A</option>
+                        </select>
+                        <label class="mt-3"> Peso<label>
+                                <input class="w-25" type="text" placeholder="Peso">
+                                <select class="mt-4 ml-3">
+                                    <option value="#">Kg</option>
+                                    <option value="#">g</option>
+                                    <option value="#">Oz</option>
+                                    <option value="#">lb</option>
+                                </select><br>
+                                <label class="mt-3">Nombre (Alias) de tu paquete</label>
+                        <input class="w-100" type="text" placeholder="">
+                        <input type="checkbox" class="mt-3 mr-3" value="#">Configurar como el paquete predeterminado<br>
+                        <button class="btn btn-warning  my-4 mx-auto">CANCELAR</button>
+                        <button class="btn btn-secondary  my-4 mx-auto">GUARDAR</button>
                     </div>
                 </div>
             </div>
-            <button class="btn btn-secondary  my-4 mx-auto">SALVAR Y CONTINUAR</button>
         </div>
+    </div>
     </div>
 
     </div>
