@@ -273,194 +273,158 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-12 col-lg-4">
-                            <h1 class="h3 mb-4 text-gray-800">Envíos</h1>
-                        </div>
-                        <div class="col-12 col-lg-8 text-right">
-                            <a class="btn btn-outline-dark"><i class="fas fa-file-import mr-2"></i>IMPORTAR CSV </a>
-                            <a class="btn btn-secondary ml-3"><i class="fas fa-cubes mr-2"></i> NUEVO ORDEN</a>
+                        <div class="col-12">
+                            <h1 class="h3 mb-4 text-gray-800">Envíos /
+                                <small> Servicio de Paquetería</small>
+                            </h1>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-12">
-                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">TODOS</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Cancelados</a>
-                                </li>
-                            </ul>
-                            <div class="tab-content" id="pills-tabContent">
-                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                                    <!-- <div class="row">
-                                <div class="col-12">
-                                    <form class="form-inline">
-                                        <div class="dropdown mr-3">
-                                            <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Filtros
-                                            </button>
-                                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                                <button class="dropdown-item" type="button">Filtro 1</button>
-                                                <button class="dropdown-item" type="button">Filtro 2</button>
-                                                <button class="dropdown-item" type="button">Filtro 3</button>
+                        <div class="row bg-gray">
+                            <div class="col-12  mt-3">
+                                <div class="row bg-white">
+                                    <div class="col-5">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                Cotización
                                             </div>
+                                            <div class="card-body">
+                                                <div class="table-responsive">
+                                                    <table class="table">
+                                                        <!--Table body-->
+                                                        <tbody>
+                                                            <tr>
+                                                                <td scope="row"><p>Remitente<br>66460</p></th>
+                                                                <td class="w-25"><p> Destinatario<br> 6600000</p></td> 
+                                                            </tr>
+                                                            <tr>
+                                                                <td scope="row"><p>Alto<br>12cm</p></th>
+                                                                <td class="w-25"><p> Ancho<br> 12cm</p></td>  
+                                                            </tr>
+                                                            <tr>
+                                                                <td scope="row"><p>Largo<br>12cm</p></th>
+                                                                <td class="w-25"><p> Peso<br> 12kg</p></td>   
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
                                             </div>
-                                    </form>
-                                </div>
-                            </div> -->
-                                    <div class="row bg-gray py-4 mt-4">
-                                        <div class="col-12  mt-3">
-                                            <div class="row bg-white">
-                                                <div class="col-5">
-                                                    <div class="card">
-                                                        <div class="card-header">
-                                                            Cotización
-                                                        </div>
-                                                        <div class="card-body">
-                                                            <div class="row">
-                                                                <div class="col-6">
-                                                                    <p>Remitente<br>66460</p>
-                                                                </div>
-                                                                <div class="col-6">
-                                                                    <p> Destinatario<br> 6600000</p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="row">
-                                                                <div class="col-6">
-                                                                    <p>Alto<br>12cm</p>
-                                                                </div>
-                                                                <div class="col-6">
-                                                                    <p> Ancho<br> 12cm</p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="row">
-                                                                <div class="col-6">
-                                                                    <p>Largo<br>12cm</p>
-                                                                </div>
-                                                                <div class="col-6">
-                                                                    <p> Peso<br> 12kg</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-footer">
-                                                            <button class="btn btn-primary">algo</button>
-                                                        </div>
-                                                    </div>
+                                            <div class="card-footer">
+                                                <button class="btn btn-primary">COTIZAR</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                Seleccionar servicios de Paquetería
+                                            </div>
+                                            <div class="card-body">
+                                                <p>Asegúrate de revisar los horarios de servicio de cada proveedor, así podrás hacer llegar tu envío a tiempo y sin inconvenientes</p>
+                                                <div class="table-responsive">
+                                                    <table class="table">
+                                                        <!--Table body-->
+                                                        <tbody>
+                                                            <tr>
+                                                                <th scope="row"><input type="radio" name="paqueteria" value="#"></th>
+                                                                <td class="w-25"><img class="img-fluid w-75" src="../img/FedEx.png" alt="FedEx"></td>
+                                                                <td>Aereo</td>
+                                                                <td>1 día</td>
+                                                                <td><button class="btn btn-primary">Precio</button></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row"><input type="radio" name="paqueteria" value="#"></th>
+                                                                <td class="w-25"><img class="img-fluid w-75" src="../img/FedEx.png" alt="FedEx"></td>
+                                                                <td>Aereo</td>
+                                                                <td>1 día</td>
+                                                                <td><button class="btn btn-primary">Precio</button></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row"><input type="radio" name="paqueteria" value="#"></th>
+                                                                <td class="w-25"><img class="img-fluid w-75" src="../img/FedEx.png" alt="FedEx"></td>
+                                                                <td>Aereo</td>
+                                                                <td>1 día</td>
+                                                                <td><button class="btn btn-primary">Precio</button></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row"><input type="radio" name="paqueteria" value="#"></th>
+                                                                <td class="w-25"><img class="img-fluid w-75" src="../img/FedEx.png" alt="FedEx"></td>
+                                                                <td>Aereo</td>
+                                                                <td>1 día</td>
+                                                                <td><button class="btn btn-primary">Precio</button></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row"><input type="radio" name="paqueteria" value="#"></th>
+                                                                <td class="w-25"><img class="img-fluid w-75" src="../img/FedEx.png" alt="FedEx"></td>
+                                                                <td>Aereo</td>
+                                                                <td>1 día</td>
+                                                                <td><button class="btn btn-primary">Precio</button></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
                                                 </div>
-                                                <div class="col-7">
-                                                    <div class="card">
-                                                        <div class="card-header">
-                                                            <h2>Seleccionar servicios de Paquetería</h2>
-                                                            <p>Asegúrate de revisar los horarios de servicio de cada proveedor, así podrás hacer llegar tu envío a tiempo y sin inconvenientes</p>
-                                                        </div>
-                                                        <div class="card-body">
-                                                            <table class="table table-responsive">
-                                                                <tbody id="myTable">
-                                                                    <tr>
-                                                                        <td><input type="radio" name="paqueteria" value="#"> </td>
-                                                                        <td><img src="" alt="FedEx"></td>
-                                                                        <td>Aereo</td>
-                                                                        <td>1 dia</td>
-                                                                        <td><button class="btn btn-primary">Precio</button></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td><input type="radio" name="paqueteria" value="#"> </td>
-                                                                        <td><img src="" alt="FedEx"></td>
-                                                                        <td>Aereo</td>
-                                                                        <td>1 dia</td>
-                                                                        <td><button class="btn btn-primary">Precio</button></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td><input type="radio" name="paqueteria" value="#"> </td>
-                                                                        <td><img src="" alt="DHL"></td>
-                                                                        <td>Aereo</td>
-                                                                        <td>1 dia</td>
-                                                                        <td><button class="btn btn-primary">Precio</button></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td><input type="radio" name="paqueteria" value="#"> </td>
-                                                                        <td><img src="" alt="UPS"></td>
-                                                                        <td>Aereo</td>
-                                                                        <td>1 dia</td>
-                                                                        <td><button class="btn btn-primary">Precio</button></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td><button class="btn btn-success">Crear Guía</button></td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-
                                             </div>
                                         </div>
 
                                     </div>
-                                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
 
-                                    </div>
                                 </div>
                             </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
                         </div>
                     </div>
-                    <!-- /.container-fluid -->
-
                 </div>
-                <!-- End of Main Content -->
-
-                <!-- Footer -->
-                <footer class="sticky-footer bg-white">
-                    <div class="container my-auto">
-                        <div class="copyright text-center my-auto">
-                            <span>Copyright &copy; Emmisary 2019</span>
-                        </div>
-                    </div>
-                </footer>
-                <!-- End of Footer -->
-
             </div>
-            <!-- End of Content Wrapper -->
-
         </div>
-        <!-- End of Page Wrapper -->
+        <!-- /.container-fluid -->
 
-        <!-- Scroll to Top Button-->
-        <a class="scroll-to-top rounded" href="#page-top">
-            <i class="fas fa-angle-up"></i>
-        </a>
+    </div>
+    <!-- End of Main Content -->
 
-        <!-- Logout Modal-->
-        <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">¿Seguro que desea salir</h5>
-                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+    
+    </div>
+    <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">¿Seguro que desea salir</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">×</span>
           </button>
-                    </div>
-                    <div class="modal-body">Seleciona "Cerrar Sesión" abajo si estas listo para salir.</div>
-                    <div class="modal-footer">
-                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
-                        <a class="btn btn-primary" href="login.html">Cerrar Sesión</a>
-                    </div>
+                </div>
+                <div class="modal-body">Seleciona "Cerrar Sesión" abajo si estas listo para salir.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+                    <a class="btn btn-primary" href="login.html">Cerrar Sesión</a>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Bootstrap core JavaScript-->
-        <script src="../vendor/jquery/jquery.min.js"></script>
-        <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap core JavaScript-->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-        <!-- Core plugin JavaScript-->
-        <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
-        <!-- Custom scripts for all pages-->
-        <script src="../js/sb-admin-2.js"></script>
-        <script src="https://unpkg.com/bootstrap-table@1.15.4/dist/bootstrap-table.min.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="../js/sb-admin-2.js"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.15.4/dist/bootstrap-table.min.js"></script>
 
 
 </body>
